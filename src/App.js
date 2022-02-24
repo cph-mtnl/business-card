@@ -1,9 +1,9 @@
-import './App.css';
-import BusinessCard from './views/BusinessCard';
+import "./App.css";
+import BusinessCard from "./views/BusinessCard";
 
 function App() {
   return (
-    <div className='container'>
+    <div className="container">
       <BusinessCard />
     </div>
   );

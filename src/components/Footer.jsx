@@ -1,11 +1,35 @@
+import SocialLink from "./SocialLink";
+
 const Footer = () => {
+   const data = [
+        {
+           icon: "twitter-square",
+           link: "www.facebook.com"
+        },
+        {
+            icon: "facebook-square",
+            link: "www.facebook.com"
+         },
+         {
+            icon: "instagram-square",
+         },
+         {
+            icon: "linkedin",
+            link: "www.facebook.com"
+         },
+         {
+            icon: "github-square",
+            link: "www.facebook.com"
+         },
+    ]
+
+    const ComponentName = "SocialLink";
+
     return (
         <div className="footer">
-            <i className="fab fa-twitter-square footer--icon"></i>
-            <i className="fab fa-facebook-square footer--icon"></i>
-            <i className="fab fa-instagram-square footer--icon"></i>
-            <i className="fab fa-linkedin footer--icon"></i>
-            <i className="fab fa-github-square footer--icon"></i>
+            {data.map((item) => {
+                return <ComponentName icon={item.icon} link={item.link} />
+            })}
         </div>
     );
 }

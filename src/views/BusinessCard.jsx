@@ -9,7 +9,7 @@ const BusinessCard = () => {
             <Info />
             <About />
             <Interests />
-            <Footer />
+            <Footer/>
         </div>
     );
 }
