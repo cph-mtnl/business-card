@@ -2,7 +2,13 @@ const SocialLink = (props) => {
     const classes = `fab fa-${props.icon} footer--icon`;
 
     return (
-        <i className={classes}></i>
+        <>
+            {props.link && 
+                <a href={props.link} target="_blank">
+                    <i className={classes}></i>
+                </a>
+            }
+        </>
     );
 }
 
